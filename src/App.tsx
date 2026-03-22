@@ -40,7 +40,14 @@ function MainApp() {
   return (
     <div className="app-shell">
       {!isFullscreen && (
-        <div className="custom-titlebar" data-tauri-drag-region>
+        <div
+          className="custom-titlebar"
+          onMouseDown={(e) => {
+            if (e.button === 0) {
+              getCurrentWindow().startDragging();
+            }
+          }}
+        >
           <img src="/icons/smarthub.png" alt="" className="titlebar-logo" draggable={false} />
           <span className="titlebar-name">smarthub</span>
         </div>

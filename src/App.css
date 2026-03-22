@@ -46,8 +46,16 @@ html.overlay-mode #root {
   gap: 8px;
   z-index: 9999;
   background: transparent;
-  -webkit-app-region: drag;
-  cursor: default;
+  cursor: grab;
+  user-select: none;
+}
+
+.custom-titlebar:active {
+  cursor: grabbing;
+}
+
+.custom-titlebar * {
+  pointer-events: none;
 }
 
 .titlebar-logo {
