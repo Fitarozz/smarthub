@@ -120,7 +120,7 @@ src-tauri/
 ---
 
 <div align="center">
-  <sub>Fait avec ❤️ pour les écrans noirs</sub>
+  <sub>2026</sub>
 </div>
 
 ## Recommended IDE Setup
