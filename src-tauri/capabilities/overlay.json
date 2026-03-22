@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "overlay",
+  "description": "Capability for the overlay webview",
+  "webviews": ["tv-overlay"],
+  "permissions": [
+    "core:default",
+    "core:event:default"
+  ]
+}
